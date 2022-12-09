@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 /* 
 
     You can write your own styles here...
@@ -10,3 +10,85 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+body{
+    background-color: rgb(241, 241, 241);
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    font-size: 24px;
+}
+
+.listStyle{
+    list-style: none;
+}
+
+.inputStyle {
+    display: table-cell;
+    vertical-align: middle;
+    height: 50px;
+}
+
+.inputStyle label {
+    width: 100px;
+    line-height: 50px;
+    text-align: start;
+}
+
+/* Filter section */
+
+.filterSection {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0px 30px 30px 30px;
+}
+
+/* Title */
+
+.title {
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Get Schwifty';
+    font-size: 60px;
+    color: #08BAE3;
+    z-index: 50;
+    -webkit-text-stroke: 1px rgba(0,0,0,0.5);
+}
+
+.subtitle {
+    font-size: 16px;
+    color: gray;
+}
+
+
+/* InlineList properties  */
+
+.inlineList{
+    display: inline-block;
+    width: 350px;
+    margin: 5px;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.inlineList img{
+    object-fit: fill;
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.inlineList h1{
+    margin-top: 5px;
+}
+
+.inlineList:hover{
+    background-color: rgb(184, 196, 223);
+}
+
+@font-face {
+    font-family: 'Get Schwifty';
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/3089507/get-schwifty.woff') format('woff');
+}
