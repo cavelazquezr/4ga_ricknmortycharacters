@@ -1,6 +1,8 @@
 import React from "react";
 import CharacterCard from "./characterCard.jsx";
 
+import rickImage from "../../img/rick.png";
+
 const CharacterList = (props) => {
 
     const characterFilter = props.list.filter(character =>
@@ -11,9 +13,24 @@ const CharacterList = (props) => {
         return <li className="inlineList" key={character.id}><CharacterCard character={character}/></li>
     })
 
+    const ifListIsEmpty = () => {
+        if(characterFilter.length>0){
+            return characterMap
+        }
+        else{
+            return(
+                <div>
+                    <img id="rick-image" src={rickImage}/>
+                    <h1>There are no results</h1>
+                </div>
+            )
+        }
+    }
+    
+
     return(
         <ul className="listStyle p-0">
-            {characterMap}
+            {ifListIsEmpty()}
         </ul>
     );
 };
